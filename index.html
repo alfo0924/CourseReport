@@ -7,9 +7,14 @@
     body{
         padding: 150px;
         background: rgb(213, 213, 213);
-
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+        justify-content: center;
         color: rgb(9, 9, 9);
         font-size: 25px;
+
+
         }
     .hover1
     {
@@ -20,6 +25,7 @@
     {
         background: red;
         display: block;
+        width: 100%;
     }
     .hov2 h1:hover
     {
@@ -29,8 +35,12 @@
 </head>
 <body>
 
-<h1> Web程式設計心得報告</h1>
-<h1 id="hov" class="hover1">WebCourseReport</h1>
+<h1 id="hov1"> Web程式設計心得報告</h1>
+<h1 id="hov" class="hover1">WebCourseReport
+<br>
+    D1204433<br>
+    林俊傑
+</h1>
 <br>
 <p>
 
@@ -42,13 +52,9 @@
 
 
 <script>
-function lm()
-{
-    var lm=document.getElementById('hov');
-
-
-}
-lm.addEventListener('mouseover',lm);
+    document.getElementById('hov1').addEventListener('mouseover', function() {
+        document.querySelector('.hover1').style.display = 'block';
+    });
 </script>
 </body>
 </html>
