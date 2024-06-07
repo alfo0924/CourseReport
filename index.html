@@ -26,18 +26,35 @@
         display: none;
 
     }
+    .hover2
+    {
+        display:none;
+    }
+    .hover3
+    {
+        display: none;
+    }
     .hover1:hover
     {
-        background: red;
+        /*background: red;*/
+        border: solid 5px rgb(224, 14, 14);
         display: block;
         width: 100%;
 
     }
-    .hov2 h1:hover
+    h2:hover
     {
-
-        display: block;
+      font-size: 60px;
+        font-weight: 700;
+        text-shadow:5px 2px 5px rgb(133, 133, 133);
     }
+    p:hover
+    {
+        border: solid 5px #464646;
+        font-weight: 700;
+    }
+
+
 
 </style>
 </head>
@@ -50,8 +67,34 @@
     林俊傑
 </h1>
 <br>
-<p>
+<br>
+<br>
+<h2 class="hover2">課程學習心得</h2>
+<br>
+<p class="hover3" >這學習的學習心得是每次大家作品review都蠻有趣很多不同的想法,
+    <br>都也會學習到新的思路像是別人作品的設計想法
+    及為甚麼會有這些想法<br>
+    像是在期末的時候有些的作品是串接第一次的錯誤404網站到擬真的網站並且有後端串接
+    <br> 若點選會有後端訊息跳到前端
+    <br>或是股票篩選 因為喜歡關注金融 所以藉由這次學到如何架設前後端
+    <br>從Express架設建構環境到SQlite 抓取金融數據庫再送到前端資訊,而且有交叉比對真的很厲害!
+    <br>我還蠻喜歡上前端+後端架設<br>因為前端可以藉美感自由搭配
+    <br>後端就是架設建構環境再送到前端,學完做到後面做出來真的還蠻有成就感
+    <br>能體會老師雖然時間只有一學期且要在有限時間內教導大家
+    <br>把許多整理好的知識額外補充到講義裡非常仔細
+    <br>日後看講義除了可以回顧上課所教的也可以看到相關的內容延伸
+    <br>最後還是要非常感謝老師給予機會就讀本科系!!
 
+
+
+
+</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
@@ -62,6 +105,8 @@
 <script>
     document.getElementById('hov1').addEventListener('mouseover', function() {
         document.querySelector('.hover1').style.display = 'block';
+        document.querySelector('.hover2').style.display = 'block';
+        document.querySelector('.hover3').style.display = 'block';
     });
 </script>
 </body>
