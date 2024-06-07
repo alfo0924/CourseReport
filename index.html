@@ -16,11 +16,15 @@
         flex-grow:1;
 
 
+
         }
         #hov1:hover
         {
+
             text-transform: uppercase;
             font-size: 5rem;
+            transition: 0.6s;
+            cursor: grab;
         }
     .hover1
     {
@@ -30,18 +34,39 @@
     .hover2
     {
         display:none;
+        transition: 0.6s;
+
     }
     .hover3
     {
         display: none;
+        font-size: 5px;
+        transition: 0.3s;
+        cursor:vertical-text;
+    }
+    .hover4
+    {
+        display:none;
+        transition: 0.4s;
+
+    }
+    .hover5
+    {
+        display:none;
+        transition:0.3s;
+        font-size: 5px;
+        cursor: vertical-text;
     }
     .hover1:hover
     {
         background: #c90000;
         border: solid 5px rgb(224, 14, 14);
-        color:rgba(168,168,168);
+        color:rgba(213, 213, 213);
         font-weight: 800;
         display: block;
+        cursor: grab;
+        transition: 0.3s;
+
     }
 
     h2:hover
@@ -49,12 +74,19 @@
       font-size: 60px;
         font-weight: 700;
         text-shadow:5px 2px 5px rgb(133, 133, 133);
+        cursor: grab;
+
 
     }
+
     p:hover
     {
-        border: solid 5px #464646;
+        background: rgba(82, 82, 82, 0.85);
+        font-size:25px;
+        border: solid 5px #6b6b6b;
         font-weight: 700;
+        color: rgb(227, 227, 227);
+
     }
 
 
@@ -74,39 +106,67 @@
 <br>
 <h2 class="hover2">課程學習心得</h2>
 <br>
-<p class="hover3" >這學習的學習心得是每次大家作品review都蠻有趣很多不同的想法,
+<p class="hover3" >
+    <br>
+    <br>
+    這學期的學習心得是每次大家作品review都蠻有趣很多不同的想法,
     <br>都也會學習到新的思路像是別人作品的設計想法
     及為甚麼會有這些想法<br>
     像是在期末的時候有些的作品是串接第一次的錯誤404網站到擬真的網站並且有後端串接
     <br> 若點選會有後端訊息跳到前端
     <br>或是股票篩選 因為喜歡關注金融 所以藉由這次學到如何架設前後端
-    <br>從Express架設建構環境到SQlite 抓取金融數據庫再送到前端資訊,而且有交叉比對真的很厲害!
+    <br>從Express架設建構環境到SQlite 抓取金融數據庫再送到前端資訊
+    <br>而且不同股票有交叉比對真的很厲害!
     <br>我還蠻喜歡上前端+後端架設<br>因為前端可以藉美感自由搭配
     <br>後端就是架設建構環境再送到前端,學完做到後面做出來真的還蠻有成就感
     <br>能體會老師雖然時間只有一學期且要在有限時間內教導大家
     <br>把許多整理好的知識額外補充到講義裡非常仔細
     <br>日後看講義除了可以回顧上課所教的也可以看到相關的內容延伸
     <br>教課內容生活化舉例非常有記憶效果 像是介紹Github版控時
-    <br>如commit: 就像是把要放的東西放在推車上 等確定了再推到倉庫 而推到倉庫叫Commit and Push
+    <br>如commit: 就像是把要放的東西放在推車上 等確定了再推到倉庫
+    <br>而推到倉庫叫Commit and Push
     <br>vue.js 的模組化 像是如果有很多東西要改
     <br>全部改會很麻煩如果改錯可能有新的錯誤要修正可能要花點時間除錯
     <br>透過單一元件更換可以比較好更換 且降低出錯概率
     <br>最後還是要非常感謝老師給予機會就讀本科系!!
-
-
-
-
+    <br>
+    <br>
 </p>
+<br>
+<h2 class="hover4">學習規劃</h2>
+<br>
+<p class="hover5">
+<br>
+<br>
+有興趣專研的 Web 程式設計相關主題是CSS Animation , Transition 動畫,轉場動畫
+<br>因為我覺得動畫,轉場動畫 都可以讓靜態頁面提升到不同層次
+<br>而且可以讓使用者過目不忘 覺得蠻有趣
+<br>
+<br>至於
+<br>學習主題:未來規劃
+<br>目前是把所有老師教的都學一遍
+<br>若不懂在上網查資料或用ai解釋
+<br>
+<br> 相關網路學習資源:
+<br>有時候會看w3school 找找答案方法或是看看相關的套件
+<br>
+<br>相關書籍:
+<br>可能會買Jquery ,Javascript 相關的書籍
+<br>
+<br>需求產業探索:
+<br>在最近ai越來越火熱 畢竟這是發展階段
+<br>所以可能會在學python 彌補一下
+<br>如果要去應徵公司目前想到是緯創 如果能上Nvidia 那更好
+<br>或是 先走前端工程師
+
 
 <br>
 <br>
-<br>
-<br>
-<br>
-
-
-
 </p>
+<br>
+<br>
+<br>
+<br>
 
 
 
@@ -115,6 +175,8 @@
         document.querySelector('.hover1').style.display = 'block';
         document.querySelector('.hover2').style.display = 'block';
         document.querySelector('.hover3').style.display = 'block';
+        document.querySelector('.hover4').style.display = 'block';
+        document.querySelector('.hover5').style.display = 'block';
     });
 </script>
 </body>
